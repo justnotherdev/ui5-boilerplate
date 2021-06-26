@@ -1,7 +1,7 @@
 {
 	"_version": "1.1.0",
 	"sap.app": {
-		"id": "com.everis.ses.ui5boilerplate",
+		"id": "com.templates.sap.ui5boilerplate",
 		"type": "application",
 		"i18n": "/i18n/i18n.properties",
 		"applicationVersion": {
@@ -46,7 +46,7 @@
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "com.everis.ses.ui5boilerplate.view.Main",
+			"viewName": "com.templates.sap.ui5boilerplate.view.Main",
 			"type": "XML",
 			"async": true
 		},
@@ -67,7 +67,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.everis.ses.ui5boilerplate.i18n.i18n"
+					"bundleName": "com.templates.sap.ui5boilerplate.i18n.i18n"
 				}
 			},
 			"appModel": {
@@ -87,7 +87,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "com.everis.ses.ui5boilerplate.view",
+				"viewPath": "com.templates.sap.ui5boilerplate.view",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"clearControlAggregation": false,

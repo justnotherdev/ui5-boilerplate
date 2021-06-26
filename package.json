@@ -4,14 +4,14 @@
 	"description": "UI5 Boilerplate Project",
 	"private": true,
 	"author": {
-		"name": "Everis Peru SES - SCP Team",
-		"url": "https://github.com/everis-scp"
+		"name": "Diego Garcia",
+		"url": "https://github.com/justnotherdev"
 	},
 	"license": "MIT",
 	"keywords": [
 		"UI5",
-		"Everis",
-		"SES"
+		"Boilerplate",
+		"Template"
 	],
 	"scripts": {
 		"start": "ui5 serve -o",
@@ -21,10 +21,10 @@
 	"main": "index.js",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/everis-scp/ui5-boilerplate"
+		"url": "https://github.com/justnotherdev/ui5-boilerplate"
 	},
 	"bugs": {
-		"url": "https://github.com/everis-scp/ui5-boilerplate/issues"
+		"url": "https://github.com/justnotherdev/ui5-boilerplate/issues"
 	},
 	"dependencies": {},
 	"devDependencies": {

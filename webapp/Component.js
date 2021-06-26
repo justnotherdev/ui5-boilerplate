@@ -1,9 +1,9 @@
 sap.ui.define(
-	['sap/ui/core/UIComponent', 'sap/ui/Device', 'com/everis/ses/ui5boilerplate/model/models'],
+	['sap/ui/core/UIComponent', 'sap/ui/Device', 'com/templates/sap/ui5boilerplate/model/models'],
 	function (UIComponent, Device, models) {
 		'use strict';
 
-		return UIComponent.extend('com.everis.ses.ui5boilerplate.Component', {
+		return UIComponent.extend('com.templates.sap.ui5boilerplate.Component', {
 			metadata: {
 				manifest: 'json'
 			},
