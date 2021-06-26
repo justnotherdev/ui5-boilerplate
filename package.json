@@ -1,0 +1,54 @@
+{
+	"name": "ui5boilerplate",
+	"version": "1.0.0",
+	"description": "UI5 Boilerplate Project",
+	"private": true,
+	"author": {
+		"name": "Everis Peru SES - SCP Team",
+		"url": "https://github.com/everis-scp"
+	},
+	"license": "MIT",
+	"keywords": [
+		"UI5",
+		"Everis",
+		"SES"
+	],
+	"scripts": {
+		"start": "ui5 serve -o",
+		"build": "ui5 build self-contained --dest './build' --clean-dest ",
+		"build-preload": "ui5 build --dest './build' --clean-dest"
+	},
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/everis-scp/ui5-boilerplate"
+	},
+	"bugs": {
+		"url": "https://github.com/everis-scp/ui5-boilerplate/issues"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@prettier/plugin-xml": "^0.13.0",
+		"@ui5/cli": "^2.9.1",
+		"commitlint": "^11.0.0",
+		"editorconfig": "^0.15.3",
+		"eslint": "^7.18.0",
+		"eslint-config-prettier": "^7.2.0",
+		"eslint-plugin-prettier": "^3.3.1",
+		"husky": "^4.3.8",
+		"prettier": "^2.2.1",
+		"ui5-middleware-index": "^0.2.2",
+		"ui5-middleware-livereload": "^0.5.1",
+		"ui5-middleware-livetranspile": "^0.3.0",
+		"ui5-middleware-simpleproxy": "^0.7.0",
+		"ui5-task-transpile": "^0.3.0"
+	},
+	"ui5": {
+		"dependencies": [
+			"ui5-middleware-livereload",
+			"ui5-middleware-index",
+			"ui5-middleware-livetranspile",
+			"ui5-task-transpile"
+		]
+	}
+}

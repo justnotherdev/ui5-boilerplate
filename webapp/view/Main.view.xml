@@ -1,0 +1,16 @@
+<mvc:View
+	controllerName="com.everis.ses.ui5boilerplate.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true"
+	xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<Page id="page" title="{i18n>appTitle}" showHeader="true">
+				<content>
+					<Text text="Contenido de Aplicativo UI5" />
+				</content>
+			</Page>
+		</App>
+	</Shell>
+</mvc:View>
