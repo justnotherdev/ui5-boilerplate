@@ -1,31 +1,18 @@
 {
 	"name": "ui5boilerplate",
 	"version": "1.0.0",
-	"description": "UI5 Boilerplate Project",
+	"description": "<%= description %>",
 	"private": true,
-	"author": {
-		"name": "Diego Garcia",
-		"url": "https://github.com/justnotherdev"
-	},
 	"license": "MIT",
 	"keywords": [
-		"UI5",
-		"Boilerplate",
-		"Template"
+		"UI5"
 	],
 	"scripts": {
 		"start": "ui5 serve -o",
-		"build": "ui5 build self-contained --dest './build' --clean-dest ",
-		"build-preload": "ui5 build --dest './build' --clean-dest"
+		"build": "ui5 build self-contained --dest './dist' --clean-dest ",
+		"build-preload": "ui5 build --dest './dist' --clean-dest"
 	},
 	"main": "index.js",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/justnotherdev/ui5-boilerplate"
-	},
-	"bugs": {
-		"url": "https://github.com/justnotherdev/ui5-boilerplate/issues"
-	},
 	"dependencies": {},
 	"devDependencies": {
 		"@prettier/plugin-xml": "^0.13.0",

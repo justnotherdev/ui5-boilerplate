@@ -1,7 +1,7 @@
 {
 	"_version": "1.1.0",
 	"sap.app": {
-		"id": "com.templates.sap.ui5boilerplate",
+		"id": "<%= namespace + '.' + name %>",
 		"type": "application",
 		"i18n": "/i18n/i18n.properties",
 		"applicationVersion": {
@@ -16,7 +16,7 @@
 						"parameters": {},
 						"additionalParameters": "allowed"
 					},
-					"semanticObject": "ui5boilerplate",
+					"semanticObject": "<%= name %>",
 					"action": "display",
 					"title": "{{appTitle}}",
 					"icon": "sap-icon://sap-ui5"
@@ -42,11 +42,11 @@
 		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
 	},
 	"sap.platform.cf": {
-		"oAuthScopes": ["$XSAPPNAME.ui5boilerplate"]
+		"oAuthScopes": [ "<%= '$XSAPPNAME.' + name %>"]
 	},
 	"sap.ui5": {
 		"rootView": {
-			"viewName": "com.templates.sap.ui5boilerplate.view.Main",
+			"viewName": "<%= namespace + '.' + name + '.view.Main' %>",
 			"type": "XML",
 			"async": true
 		},
@@ -67,7 +67,7 @@
 			"i18n": {
 				"type": "sap.ui.model.resource.ResourceModel",
 				"settings": {
-					"bundleName": "com.templates.sap.ui5boilerplate.i18n.i18n"
+					"bundleName": "<%= namespace + '.' + name + '.i18n.i18n' %>"
 				}
 			},
 			"appModel": {
@@ -87,7 +87,7 @@
 			"config": {
 				"routerClass": "sap.m.routing.Router",
 				"viewType": "XML",
-				"viewPath": "com.templates.sap.ui5boilerplate.view",
+				"viewPath": "<%= namespace + '.' + name + '.view' %>",
 				"controlId": "app",
 				"controlAggregation": "pages",
 				"clearControlAggregation": false,

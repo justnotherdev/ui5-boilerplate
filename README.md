@@ -1,4 +1,8 @@
-# UI5-Boilerplate Project
+# README
+
+## Este es un README para el proyecto "<%= name %>"
+
+---
 
 Este es un proyecto base UI5 configurado para desarrollo local al cual se le aplicaron ciertas guias de diseño para mantener una estructura del código estándar para todos los desarrolladores.
 
