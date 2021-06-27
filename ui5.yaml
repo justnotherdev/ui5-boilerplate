@@ -1,6 +1,6 @@
 specVersion: '2.2'
 metadata:
-    name: ui5boilerplate
+    name: <%= name %>
 type: application
 resources:
     configuration:
