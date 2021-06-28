@@ -3,7 +3,7 @@ sap.ui.define(
 	function (Controller, MessageBox) {
 		'use strict';
 
-		return Controller.extend('com.templates.sap.ui5boilerplate.controller.BaseController', {
+		return Controller.extend('<%= namespace + "." + name + ".controller.BaseController" %>', {
 			getAppModel: function (sModel) {
 				return this.getOwnerComponent().getModel(sModel || '');
 			},

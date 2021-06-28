@@ -15,9 +15,9 @@
 			data-sap-ui-preload="async"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-async="true"
-			data-sap-ui-resourceroots='{
-            "com.templates.sap.ui5boilerplate": "./"
-          }'
+			data-sap-ui-resourceroots="{
+            '<%= namespace + `.` + name %>': './'
+          }"
 		></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<script>
@@ -25,7 +25,7 @@
 				new sap.m.Shell({
 					app: new sap.ui.core.ComponentContainer({
 						height: '100%',
-						name: 'com.templates.sap.ui5boilerplate'
+						name: '<%= namespace + `.` + name %>'
 					})
 				}).placeAt('content');
 			});

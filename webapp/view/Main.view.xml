@@ -1,5 +1,5 @@
 <mvc:View
-	controllerName="com.templates.sap.ui5boilerplate.controller.Main"
+	controllerName="<%= namespace + '.' + name + '.controller.Main' %>"
 	xmlns:mvc="sap.ui.core.mvc"
 	displayBlock="true"
 	xmlns="sap.m"
