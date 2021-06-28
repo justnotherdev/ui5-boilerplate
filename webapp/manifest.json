@@ -38,17 +38,18 @@
 			"desktop": true,
 			"tablet": true,
 			"phone": true
-		},
-		"supportedThemes": ["sap_hcb", "sap_bluecrystal"]
+		}
 	},
 	"sap.platform.cf": {
-		"oAuthScopes": [ "<%= '$XSAPPNAME.' + name %>"]
+		"oAuthScopes": ["<%= '$XSAPPNAME.' + name %>"]
 	},
 	"sap.ui5": {
+		"flexEnabled": false,
 		"rootView": {
 			"viewName": "<%= namespace + '.' + name + '.view.Main' %>",
 			"type": "XML",
-			"async": true
+			"async": true,
+			"id": "Main"
 		},
 		"dependencies": {
 			"minUI5Version": "1.82.0",
@@ -105,7 +106,8 @@
 					"viewType": "XML",
 					"transition": "slide",
 					"clearControlAggregation": false,
-					"viewName": "Main"
+					"viewName": "Main",
+					"viewId": "Main"
 				}
 			}
 		}

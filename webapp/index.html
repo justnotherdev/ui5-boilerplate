@@ -4,7 +4,7 @@
 		<meta charset="utf-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>UI5 Boilerplate</title>
+		<title><%= name %></title>
 		<link rel="shortcut icon" href="/favicon.ico" />
 
 		<script
@@ -15,21 +15,18 @@
 			data-sap-ui-preload="async"
 			data-sap-ui-libs="sap.m"
 			data-sap-ui-async="true"
-			data-sap-ui-resourceroots="{
-            '<%= namespace + `.` + name %>': './'
-          }"
+			data-sap-ui-resourceroots='{"<%= namespace + `.` + name %>": "./"}'
+			data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
+			data-sap-ui-frameOptions="trusted"
 		></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		<script>
-			sap.ui.getCore().attachInit(function () {
-				new sap.m.Shell({
-					app: new sap.ui.core.ComponentContainer({
-						height: '100%',
-						name: '<%= namespace + `.` + name %>'
-					})
-				}).placeAt('content');
-			});
-		</script>
 	</head>
-	<body class="sapUiBody" id="content"></body>
+	<body class="sapUiBody">
+		<div
+			data-sap-ui-component
+			data-name="<%= namespace + '.' + name %>"
+			data-id="container"
+			data-settings='{"id": "<%= name %>"}'
+		></div>
+	</body>
 </html>
